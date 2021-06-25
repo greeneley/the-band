@@ -16,12 +16,56 @@ html {
 3. Mau sac
 4. Kieu dang (kieu chu, hinh tron, vuong , ...)
 */
+.row {
+    margin-left : -8px;
+    margin-right: -8px;
+}
 
-#main {}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
 .text-white {
     color: #fff !important;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.col {
+    float        : left;
+    padding-left : 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+
+.col-third {
+    width: 33.333%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+#main {}
+
+
 
 html {
     font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +83,6 @@ html {
 
 #nav {
     display: inline-block;
-
 }
 
 .subnav {
@@ -172,11 +215,7 @@ html {
     margin-top: 48px;
 }
 
-#content .member-item {
-    float     : left;
-    width     : 33.3%;
-    text-align: center;
-}
+
 
 #content .member-name {
     font-size: 15px;
@@ -237,17 +276,11 @@ html {
 /* Places */
 
 .places-list {
-    margin-top  : 32px;
-    margin-left : -8px;
-    margin-right: -8px;
+    margin-top   : 32px;
     margin-bottom: 48px;
 }
 
-.place-item {
-    float  : left;
-    width  : 33.333%;
-    padding: 0 8px;
-}
+/*  */
 
 .place-img {
     width  : 100%;
@@ -262,6 +295,7 @@ html {
     background-color: #fff;
     padding         : 16px;
     font-size       : 15px;
+
 }
 
 .place-heading {
@@ -270,26 +304,66 @@ html {
 
 .place-time {
     margin-top: 15px;
-    color: #757575;
+    color     : #241111;
 }
 
 .place-desc {
-    margin-top: 15px;
+    margin-top : 15px;
     line-height: 1.6;
 }
 
 .place-buy-btn {
-    color: #fff;
+    margin-top      : 15px;
     background-color: #000;
-    text-decoration: none;
-    padding: 8px 16px;
-    display: inline-block;
-    margin-top: 15px;
+    color           : #fff;
+    text-decoration : none;
+    padding         : 8px 16px;
+    display         : inline-block;
 }
 
 .place-buy-btn:hover {
-    color: #000;
+    color           : #000;
     background-color: #ddd;
 }
 
+
+/* Contact content form */
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 16px;
+    float: right;
+    outline: none;
+}
+
+.contact-form .form-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
 #footer {}
